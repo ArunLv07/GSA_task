@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="{% static 'my_profile.css' %}">
+</head>
+<body>
+    <div class="profile-card">
+        <h1>My Profile</h1>
+        <p><span class="profile-label">Name:</span> {{ value.name }}</p>
+        <p><span class="profile-label">Email:</span> {{ value.email }}</p>
+        <p><span class="profile-label">Mobile No:</span> {{ value.mobile_number }}</p>
+        <p><span class="profile-label">Address:</span> {{ value.address }}</p>
+    </div>
+</body>
+</html>

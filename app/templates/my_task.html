@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Task</title>
+    <link rel="stylesheet" href="{% static 'my_task.css' %}">
+</head>
+<body>
+    <h1>My Task</h1>
+    <table>
+        <tr>
+            <th>Task Name</th>
+            <td>{{ my_task.name }}</td>
+        </tr>
+        <tr>
+            <th>Date</th>
+            <td>{{ my_task.date }}</td>
+        </tr>
+        <tr>
+            <th>Time</th>
+            <td>{{ my_task.time }}</td>
+        </tr>
+        <tr>
+            <th>Status</th>
+            <td>{{ my_task.status }}</td>
+        </tr>
+    </table>
+</body>
+</html>
